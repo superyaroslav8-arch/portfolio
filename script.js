@@ -78,7 +78,7 @@ function animate() {
         ctx.beginPath();
         ctx.strokeStyle = `rgba(0, 245, 212, ${0.15 * (1 - dist / 120)})`;
         ctx.lineWidth = 0.5;
-        ctx.moveTo(particles[i].x, particles[j].y);
+        ctx.moveTo(particles[i].x, particles[i].y);
         ctx.lineTo(particles[j].x, particles[j].y);
         ctx.stroke();
       }
